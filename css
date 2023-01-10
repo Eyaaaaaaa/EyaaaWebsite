@@ -1,0 +1,169 @@
+@font-face {
+    font-family: Nove;
+    src: url(fonts/Nove.ttf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #333;
+    color: #fff;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  header img {
+    height: 40px;  
+}
+  
+  header nav {
+    display: flex;
+    align-items: flex-start;
+
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  header nav ul li a:hover {
+    color: #ccc;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    position: relative;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+    border-radius: 10px;
+    position: relative;
+    }
+    
+
+  .order-btn {
+    border: 2px solid black; /* Remove border */
+    color: black;
+    background-color: rgb(228, 228, 77);    
+    padding: 5px 12px; /* Some padding */
+    margin: 5px 5px;
+    text-align: center; /* Center the text */
+    display: inline-block; /* Make the button inline */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-family: Nove;
+    src: url(fonts/Nove.ttf);
+    border-radius: 5px;
+  }
+  
+  .order-btn:hover{
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .order-btn:before {
+    content: "\1F34B " " " ;
+  }
+
+  .order-btn:after {
+    content: " \1F34B";
+  }
+
+  .bottom-center-btn{
+    border: 2px solid black; /* Remove border */
+    color: black;
+    background-color: rgb(228, 228, 77);    
+    padding: 10px 30px; /* Some padding */
+    margin: 5px 5px;
+    text-align: center; /* Center the text */
+    display: inline-block; /* Make the button inline */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold;
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-family: Nove;
+    src: url(fonts/Nove.ttf);
+    border-radius: 5px;
+  }
+
+  .bottom-center-btn {
+    position: absolute;
+    bottom: 435px; /* Adjust as needed */
+    left: 50%; /* Horizontally center the button */
+    transform: translateX(-50%); /* Adjust the horizontal position of the button to center it */
+    z-index: 2;
+    font-family: Nove;
+    src: url(fonts/Nove.ttf);
+  }
+
+  @media only screen and (max-width: 750px) {
+    .bottom-center-btn {
+      bottom: 295px; /* Adjust as needed */
+    }
+  }
+  
+  
+  .bottom-center-btn::before {
+    content: "\1F34B " " " ;
+  }
+
+  .bottom-center-btn::after {
+    content: " \1F34B";
+  }
+
+  .bottom-center-btn:hover{
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+  .footer img {
+    height: 40px;
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 20px;
+    font-family: fantasy;
+    font-weight: bold;
+    font-family: Nove;
+    src: url(fonts/Nove.ttf);
+  }
+  
+  

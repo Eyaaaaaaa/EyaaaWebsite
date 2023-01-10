@@ -3,7 +3,7 @@
     src: url(fonts/Nove.ttf);
 }
 
-/* header {
+ header {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -17,10 +17,11 @@
     z-index: 1;
   }
   
-  header img {
+ header img {
     height: 40px;  
 }
   
+
   header nav {
     display: flex;
     align-items: flex-start;
@@ -46,7 +47,7 @@
   header nav ul li a:hover {
     color: #ccc;
   }
-  */
+  
 
   body {
     margin: 0;
@@ -60,11 +61,33 @@
   img {
     max-width: 100%;
     height: auto;
+    border-radius: 50px 50px 50px 50px;
     z-index: 2;
-    border-radius: 10px;
     position: relative;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Add a container around the image */
+.img-container {
+    position: relative; /* Position the container relatively */
+    text-align: center; /* Center the button horizontally */
+}
+
+@media only screen and (min-width: 800px) {
+    img {
+      max-width: 60%;
     }
-    
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    img {
+      max-width: 100%;
+      margin-left: -30px;
+    }
+  }
+  
 
   .order-btn {
     border: 2px solid black; /* Remove border */
@@ -99,11 +122,11 @@
     border: 2px solid black; /* Remove border */
     color: black;
     background-color: rgb(228, 228, 77);    
-    padding: 10px 50px; /* Some padding */
-    margin: 5px 5px;
+    padding: 15px 100px; /* Some padding */
+    margin: 250px 5px;
     text-align: center; /* Center the text */
     display: inline-block; /* Make the button inline */
-    font-size: 16px; /* Increase font size */
+    font-size: 18px; /* Increase font size */
     font-weight: bold;
     cursor: pointer; /* Add a pointer cursor on hover */
     font-family: Nove;
@@ -111,22 +134,34 @@
     border-radius: 5px;
   }
 
-  .bottom-center-btn {
+/* Position the button on the container */
+.bottom-center-btn {
     position: absolute;
-    bottom: 435px; /* Adjust as needed */
     left: 50%; /* Horizontally center the button */
     transform: translateX(-50%); /* Adjust the horizontal position of the button to center it */
     z-index: 2;
     font-family: Nove;
     src: url(fonts/Nove.ttf);
-  }
+    white-space: nowrap;
+}
 
-  @media only screen and (max-width: 750px) {
+/* Adjust the button position on smaller screens */
+@media only screen and (max-width: 300px) {
     .bottom-center-btn {
-      bottom: 295px; /* Adjust as needed */
+        bottom: 120px; /* Adjust as needed */
+        padding: 15px 100px;
+        font-size: 18px;
     }
-  }
-  
+}
+
+@media only screen and (min-width: 300px) {
+    .bottom-center-btn {
+        /* Add styles for larger screens */
+        bottom: 295px; /* Adjust as needed */
+    }
+}
+
+
   
   .bottom-center-btn::before {
     content: "\1F34B " " " ;
@@ -141,7 +176,7 @@
     color: #fff;
   }
   
-/*  .footer {
+  .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -166,5 +201,5 @@
     font-family: Nove;
     src: url(fonts/Nove.ttf);
   }
- */
+
  

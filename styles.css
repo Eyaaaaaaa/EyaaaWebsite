@@ -303,6 +303,8 @@
     left: 50%;
     transform: translate(-50%, -50%); /* center the modal */
     border: solid 2px #333;
+    font-size: 30px;
+
 }
 
 #age-verification-buttons {
@@ -319,6 +321,8 @@
     border-radius: 5px;
     cursor: pointer;
     margin: -10px 10px 0px 10px;
+    font-size: 22px;
+
 }
 
 .logo {
@@ -354,11 +358,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #age-verification-modal, #age-verification-buttons, {
-      width: 65%; /* Increase the width of the modal to 90% on mobile devices */
-      height: 23%; /* Increase the height of the modal to 90% on mobile devices */
+    #age-verification-modal, #age-verification-buttons button  {
+      width: 75%; /* Increase the width of the modal to 90% on mobile devices */
+      height: 30%; /* Increase the height of the modal to 90% on mobile devices */
       font-size: 45px;
-
+      position: relative;
     }
   }
  

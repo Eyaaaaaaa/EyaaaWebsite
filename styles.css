@@ -302,7 +302,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); /* center the modal */
-    box-shadow: solid 5px black;
     border: solid 2px #333;
 }
 
@@ -315,7 +314,7 @@
 #age-verification-buttons button {
     background-color: #333; /* black background */
     color: #f4d40d; /* yellow text */
-    padding: 10px 20px;
+    padding: 20px 40px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -355,11 +354,11 @@
 }
 
 @media only screen and (max-width: 600px) {
-    #age-verification-modal {
-      width: 42%; /* Increase the width of the modal to 90% on mobile devices */
-      height: 19%; /* Increase the height of the modal to 90% on mobile devices */
-      font-size: 25px;
-      
+    #age-verification-modal, #age-verification-buttons, {
+      width: 65%; /* Increase the width of the modal to 90% on mobile devices */
+      height: 23%; /* Increase the height of the modal to 90% on mobile devices */
+      font-size: 45px;
+
     }
   }
  

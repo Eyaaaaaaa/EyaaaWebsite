@@ -5,6 +5,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="age-verification">
+        <div id="age-verification-modal">
+            <img src="images/Eyaalogo2.png" alt="Logo" class="logo">
+          <p>Are you over 18?</p>
+          <div id="age-verification-buttons">
+            <button id="yes-button">Yes</button>
+            <button id="no-button">No</button>
+          </div>
+          <div id="age-verification-message" style="display: none;">
+            <p>You are not allowed to continue. </p>
+          </div>
+        </div>
+      </div>
     <header class="header">
       <!--<img src="" alt="Logo" class="logo"> -->
        <nav class="nav">
@@ -17,6 +30,22 @@
        <img class="img" src="images/Eyaamenu2.png">
        <button onclick="window.location.href='https://forms.gle/4MRcUHwD9fJeiWNV9'" class="bottom-center-btn">ORDER NOW</button>
    </div>
+   <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    // Show the age verification modal on page load
+    document.getElementById("age-verification").style.display = "block";
+  
+    // Add event listeners to the "Yes" and "No" buttons
+    document.getElementById("yes-button").addEventListener("click", function() {
+      // Allow the user to continue if they click "Yes"
+      document.getElementById("age-verification").style.display = "none";
+    });
+    document.getElementById("no-button").addEventListener("click", function() {
+      // Show the age verification message
+      document.getElementById("age-verification-message").style.display = "block";
+    });
+  });
+   </script>
    </body>   
 <footer class="footer">
     <div class="footer-left">
@@ -27,4 +56,3 @@
     </div>
   </footer> 
 </html>
-
